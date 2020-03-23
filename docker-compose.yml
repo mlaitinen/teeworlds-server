@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  server:
+    image: mikula/teeworlds-server
+    ports:
+      - 8303:8303/udp
+    environment:
+      TW_sv_name: myserver
+      TW_sv_max_clients: 16
